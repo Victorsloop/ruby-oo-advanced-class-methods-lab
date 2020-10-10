@@ -41,7 +41,7 @@ class Song
     self.all.sort_by{|title| title.name }
   end 
 
-  def self.new_from_filename(filename)
+  def self.new_from_filename(filename)## had to look at 
     parts = filename.split(" - ")
     artist_name = parts[0]
     song_name = parts[1].gsub(".mp3", "")
@@ -52,7 +52,7 @@ class Song
     song
   end
 
-  def self.create_from_filename(filename)
+  def self.create_from_filename(filename)#had to look at
     parts = filename.split(" - ")
     artist_name = parts[0]
     song_name = parts[1].gsub(".mp3", "")
